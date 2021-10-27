@@ -1,6 +1,7 @@
 {
     "name": "Azure DevOps Pipeline Tags",
     "description": "Display pipline run tags in pipeline list view",
+    "author": "Zach LeBlanc",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
