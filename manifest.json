@@ -1,6 +1,6 @@
 {
     "name": "Azure DevOps Pipeline Tags",
-    "description": "Display build tags in pipeline list view",
+    "description": "Display pipline run tags in pipeline list view",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
@@ -26,5 +26,9 @@
     ],
     "host_permissions": [
         "https://dev.azure.com/*"
-    ]
+    ],
+    "icons": {
+        "16": "img/tag-16.png",
+        "48": "img/tag-48.png"
+    }
   }
