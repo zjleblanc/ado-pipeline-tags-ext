@@ -1,0 +1,30 @@
+{
+    "name": "Azure DevOps Pipeline Tags",
+    "description": "Display build tags in pipeline list view",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://dev.azure.com/*"
+        ],
+        "include_globs": [
+            "https://dev.azure.com/*_build?definitionId=*"
+        ],
+        "js": [
+            "include/jquery-3.6.0.slim.min.js",
+            "scripts/main.js"
+        ],
+        "css": [
+            "css/main.css"
+        ]
+    }],
+    "permissions": [
+        "cookies"
+    ],
+    "host_permissions": [
+        "https://dev.azure.com/*"
+    ]
+  }
