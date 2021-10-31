@@ -45,7 +45,7 @@ function createElement(tags){
  * Retrieve build details from ADO API, create bolt pills, and inject html into runs table
  * @async
  * @param {list} buildIds - list of build ids to query details from ADO API.
- * @param {list} token - ADO oauth token sourced from cookies
+ * @param {string} token - ADO oauth token sourced from cookies
  */
 async function addElements(buildIds, token) {
     let baseUrl = window.location.toString().split("_build")[0];
