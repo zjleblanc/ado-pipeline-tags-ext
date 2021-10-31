@@ -23,7 +23,11 @@
         ]
     }],
     "permissions": [
-        "cookies"
+        "cookies",
+        "tabs",
+        "webNavigation",
+        "scripting",
+        "storage"
     ],
     "host_permissions": [
         "https://dev.azure.com/*"
