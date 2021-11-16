@@ -7,8 +7,9 @@ chrome.runtime.onMessage.addListener((message, sender, callback) => {
 // Handle navigation to pipeline runs view via history updates
 // Ex: clicking the back button
 const regex = new RegExp(/https:\/\/dev\.azure\.com\/.*_build\?.*definitionId=.*/,'i');
+const transitionTypes = ["reload","link"];
 chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
-    if(regex.test(details.url) && details.frameId == 0 && details.transitionType == 'reload') {
+    if(regex.test(details.url) && details.frameId == 0 && transitionTypes.includes(details.transitionType)) {
         chrome.tabs.get(details.tabId, function(tab) {
             if(tab.url === details.url) {
                 chrome.scripting.insertCSS({
