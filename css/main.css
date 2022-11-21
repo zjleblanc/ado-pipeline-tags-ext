@@ -1,3 +1,25 @@
 span.ext-gen-tags {
     margin-left: 5px;
 }
+
+.table-cell-ext-gen-tags-mod .scroll-hidden {
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+
+/* Tooltip container */
+.tag-list-tooltip {
+    position: absolute;
+    visibility: visible;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.06);
+    color: rgba(0,0,0,0.9);
+    box-shadow: 0 3.2px 7.2px 0 var(--callout-shadow-color,rgba(0, 0, 0, .132)),0 .6px 1.8px 0 var(--callout-shadow-secondary-color,rgba(0, 0, 0, .108))
+}
+
+/* Tooltip text */
+.tag-list-tooltip .tooltip-tag {
+    padding: 5px 10px;
+    border-radius: 6px;
+}
