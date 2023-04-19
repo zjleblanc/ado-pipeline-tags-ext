@@ -18,7 +18,7 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
                 });    
                 chrome.scripting.executeScript({
                     target: { tabId: tab.id },
-                    files: ['include/jquery-3.6.0.slim.min.js','scripts/main.js']
+                    files: ['include/jquery-3.6.4.slim.min.js','scripts/main.js']
                 });    
             }
         });
