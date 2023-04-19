@@ -2,7 +2,7 @@
     "name": "Azure DevOps Pipeline Tags",
     "description": "Display pipline run tags in pipeline list view",
     "author": "Zach LeBlanc",
-    "version": "1.2",
+    "version": "1.2.2",
     "manifest_version": 3,
     "background": {
         "service_worker": "background.js"
@@ -16,7 +16,7 @@
             "https://dev.azure.com/*_build?definitionId=*"
         ],
         "js": [
-            "include/jquery-3.6.0.slim.min.js",
+            "include/jquery-3.6.4.slim.min.js",
             "scripts/main.js"
         ],
         "css": [

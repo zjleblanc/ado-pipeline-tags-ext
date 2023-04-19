@@ -115,7 +115,7 @@ async function addElements(buildIds, token) {
     .then(function(json){
         $.each(json.value, function(idx, build) {
             let buildRowQuery = `a[href$="buildId=${build.id}"]`;
-            let buildTagColQuery = "td[data-column-index=1] > div.bolt-table-cell-content > div.flex-row"
+            let buildTagColQuery = "td[data-column-index=1] > div.bolt-table-cell-content > div.stage-cell > div.flex-row"
             waitForElements(buildRowQuery, function(builds){
                 builds.first().addClass('table-cell-ext-gen-tags-mod');
                 waitForChildElements(builds.first(), buildTagColQuery, function(cols) {
